@@ -1,5 +1,5 @@
 local SAE =
-"https://vss.pandauth.com/kv/14753c0bcf74b076"
+loadstring(game:HttpGet("https://vss.pandauth.com/kv/14753c0bcf74b076"))()
 cục bộ theo ID trò chơi = {
     [10563114921] = SAE,
 }
