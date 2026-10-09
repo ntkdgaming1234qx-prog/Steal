@@ -1,10 +1,10 @@
-local SAE =
-loadstring(game:HttpGet("https://vss.pandauth.com/kv/14753c0bcf74b076"))()
-cục bộ theo ID trò chơi = {
+SAE địa phương =
+"https://luafly.is-local.org/loader/cf93ac81674a4c879a14e136e08ab7fb"
+local theo ID trò chơi = {
     [10563114921] = SAE,
 }
 
-cục bộ theo ID địa điểm = {
+local theo ID địa điểm = {
     [107778070777162] = SAE,
 }
 
@@ -14,15 +14,15 @@ trong khi gameId == 0 và game.PlaceId == 0 thì
     gameId = game.GameId
 kết thúc
 
-URL cục bộ = byGameId[gameId] hoặc byPlaceId[game.PlaceId]
+URL local = byGameId[gameId] hoặc byPlaceId[game.PlaceId]
 nếu không phải URL thì
     trở lại
 kết thúc
 
 for _ = 1, 3 do
-    cục bộ ok, nguồn = pcall(game.HttpGet, game, url)
-    nếu ok và kiểu(nguồn) == "string" và nguồn ~= "" thì
-        khối cục bộ = chuỗi tải (nguồn)
+    local bộ ok, source = pcall(game.HttpGet, game, url)
+    if ok và type(source) == "string" và source ~= "" thì
+        khối cục bộ = tải chuỗi ( nguồn)
         nếu khối thì
             khối()
         kết thúc
