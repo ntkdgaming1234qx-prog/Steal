@@ -1,6 +1,6 @@
 local SAE =
 "https://luafly.is-local.org/loader/cf93ac81674a4c879a14e136e08ab7fb"
-local theo ID trò chơi = {
+local byGameId = {
     [10563114921] = SAE,
 }
 
